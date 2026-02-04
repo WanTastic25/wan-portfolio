@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+ul li a {
+    font-size: clamp(10px, 1.7vw, 40px);
+    text-decoration: none;
+    color: black;
+}
