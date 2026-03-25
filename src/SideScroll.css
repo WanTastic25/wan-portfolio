@@ -7,7 +7,25 @@ ul {
 }
 
 ul li a {
-    font-size: clamp(10px, 1.7vw, 40px);
+    font-size: clamp(5px, 1.7vw, 40px);
     text-decoration: none;
     color: black;
+}
+
+.TextScale {
+    transition: font-size 0.3s ease;
+}
+
+.TextScale:hover {
+    font-size: clamp(5px, 2vw, 40px);
+    color: red;
+}
+
+.sidebarScale {
+    background-color: aquamarine;
+    transition: transform 0.2s ease;
+}
+
+.sidebarScale:hover {
+    transform: scale(1.2);
 }

@@ -17,64 +17,64 @@ import GitHubIcon from './assets/images/techIcons/github-icon.svg?react'
 
 function Techstack() {
     return (
-        <div className="container-fluid p-5 min-vh-100" id="Techstack">
+        <div className="container-fluid p-5 min-vh-100 align-content-center" id="Techstack">
             <h1 className="d-flex justify-content-center pb-5">Techstack</h1>
 
             <div className="row justify-content-center g-4">
                 <div className="col-auto">
-                    <div className="card">
+                    <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Languages</h5>
                         <div className="card-body">
                             {/* Put Icons Here */}
                             <div className="d-flex flex-wrap justify-content-center" style={{ gap: "10px" }}>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <CssIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>CSS</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <HtmlIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>HTML</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <JsIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>JavaScript</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
-                                    <CsharpIcon width={50} height={50} />
-                                    <p className='m-0 mt-1'>C#</p>
-                                </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
-                                    <JavaIcon width={50} height={50} />
-                                    <p className='m-0 mt-1'>Java</p>
-                                </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <PhpIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>PHP</p>
                                 </div>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                    <CsharpIcon width={50} height={50} />
+                                    <p className='m-0 mt-1'>C#</p>
+                                </div>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                    <JavaIcon width={50} height={50} />
+                                    <p className='m-0 mt-1'>Java</p>
+                                </div>                                
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="col-auto">
-                    <div className="card">
+                    <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Frameworks</h5>
                         <div className="card-body">
                             {/* Put Icons Here */}
                             <div className="d-flex flex-wrap justify-content-center" style={{ gap: "10px" }}>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <ReactIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>React</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <LaravelIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>Laravel</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <BootStrapIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>Bootstrap</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <DotNetIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>ASP.NET</p>
                                 </div>
@@ -84,24 +84,24 @@ function Techstack() {
                 </div>
 
                 <div className="col-auto">
-                    <div className="card">
+                    <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Others</h5>
                         <div className="card-body">
                             {/* Put Icons Here */}
                             <div className="d-flex flex-wrap justify-content-center" style={{ gap: "10px" }}>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <MySqlIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>MySQL</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <UnityIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>Unity</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <GodotIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>Godot</p>
                                 </div>
-                                <div className="border d-flex flex-column justify-content-center align-items-center align-content-center p-2 rounded" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <GitHubIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>GitHub</p>
                                 </div>
