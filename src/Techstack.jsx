@@ -1,3 +1,6 @@
+import { motion, useAnimation, useInView } from 'motion/react';
+import { useRef, useEffect } from 'react';
+
 import CssIcon from './assets/images/techIcons/css-icon.svg?react'
 import HtmlIcon from './assets/images/techIcons/html-icon.svg?react'
 import JsIcon from './assets/images/techIcons/javascript-programming-language-icon.svg?react'
@@ -16,12 +19,37 @@ import UnityIcon from './assets/images/techIcons/unity-game-engine-icon.svg?reac
 import GitHubIcon from './assets/images/techIcons/github-icon.svg?react'
 
 function Techstack() {
+    const titleRef = useRef(null);
+    const cardRef = useRef(null);
+    const titleInView = useInView(titleRef, { amount: 0.3 });
+    const cardInView = useInView(cardRef, { amount: 0.7 });
+
     return (
         <div className="container-fluid p-5 min-vh-100 align-content-center" id="Techstack">
-            <h1 className="d-flex justify-content-center pb-5">Techstack</h1>
-
-            <div className="row justify-content-center g-4">
-                <div className="col-auto">
+            <motion.div
+                ref={titleRef}
+                initial={{ opacity: 0, y: -50 }}
+                animate={titleInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.8 }}>
+                <h1 className="d-flex justify-content-center pb-5">Techstack</h1>
+            </motion.div>
+            <motion.div
+                className="row justify-content-center g-4"
+                ref={cardRef}
+                initial="hidden"
+                animate={cardInView ? "visible" : "hidden"}
+                variants={{
+                    visible: {
+                        transition: {
+                            staggerChildren: 0.3,
+                        }
+                    }
+                }}>
+                <motion.div className="col-auto"
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1, transition: {duration: 0.8} }
+                    }}>
                     <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Languages</h5>
                         <div className="card-body">
@@ -50,13 +78,18 @@ function Techstack() {
                                 <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <JavaIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>Java</p>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="col-auto">
+                <motion.div
+                    className="col-auto"
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1, transition: {duration: 0.8} }
+                    }}>
                     <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Frameworks</h5>
                         <div className="card-body">
@@ -81,9 +114,13 @@ function Techstack() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="col-auto">
+                <motion.div className="col-auto"
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1, transition: {duration: 0.8} }
+                    }}>
                     <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Others</h5>
                         <div className="card-body">
@@ -108,8 +145,8 @@ function Techstack() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }
