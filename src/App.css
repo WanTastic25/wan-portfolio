@@ -13,3 +13,7 @@
 .tech-item-hover:hover {
     transform: scale(1.05);
 }
+
+.main-bg {
+    background-color: pink;
+}

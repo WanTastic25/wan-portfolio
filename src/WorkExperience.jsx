@@ -37,7 +37,7 @@ function WorkExperience() {
                     }}>
                     <div className="row">
                         <div className="col-md-4">
-                            <img src={game} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                            <img src={game} style={{ width: "100%", height: "100%", objectFit: "cover", borderTopLeftRadius: "6px",borderBottomLeftRadius: "6px" }} />
                         </div>
                         <div className="col g-0">
                             <div className="card-body">
@@ -55,7 +55,7 @@ function WorkExperience() {
                     }}>
                     <div className="row">
                         <div className="col-md-4">
-                            <img src={game} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                            <img src={game} style={{ width: "100%", height: "100%", objectFit: "cover", borderTopLeftRadius: "5px",borderBottomLeftRadius: "5px" }} />
                         </div>
                         <div className="col g-0">
                             <div className="card-body">

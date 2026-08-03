@@ -2,9 +2,8 @@ import { motion, useAnimation, useInView } from 'motion/react';
 import { useRef, useEffect } from 'react';
 import logo from './assets/images/userIcon.jpg';
 
-function AboutMe() {
-    const ref = useRef(null);
-    const inView = useInView(ref, { amount: 0.3 });
+function AboutMe({ aboutRef }) {
+    const inView = useInView(aboutRef, { amount: 0.3 });
     const controls = useAnimation();
 
     useEffect(() => {
@@ -25,7 +24,7 @@ function AboutMe() {
         <motion.div
             className="d-flex container-fluid p-5 min-vh-100 align-content-center justify-content-center"
             id="About"
-            ref={ref}
+            ref={aboutRef}
             initial={{ opacity: 0, x: -50 }}
             animate={controls}
             transition={{ duration: 0.8 }}
