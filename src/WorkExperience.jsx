@@ -41,7 +41,7 @@ function WorkExperience() {
                         </div>
                         <div className="col g-0">
                             <div className="card-body">
-                                <h5 className="card-title">Lorem Ipsum</h5>
+                                <h5 className="card-title">Internship</h5>
                                 <p className="card-text">Lorem Ipsum</p>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ function WorkExperience() {
                         </div>
                         <div className="col g-0">
                             <div className="card-body">
-                                <h5 className="card-title">Lorem Ipsum</h5>
+                                <h5 className="card-title">Assistant Officer at UMS</h5>
                                 <p className="card-text">Lorem Ipsum</p>
                             </div>
                         </div>
