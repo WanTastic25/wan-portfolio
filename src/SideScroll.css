@@ -26,23 +26,25 @@ html {
 .side-link {
   display: inline-block;
   text-decoration: none;
-  color: rgba(63, 175, 120, 0.45);
+  color: black;
   font-size: clamp(0.9rem, 1.7vw, 2rem);
   letter-spacing: 0.02em;
   transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 .side-link.is-active {
-  color: rgba(63, 175, 120, 0.95);
-  text-shadow: 0 0 18px rgba(63, 175, 120, 0.45);
+  /* color: rgba(63, 175, 120, 0.95); */
+  /*text-shadow: 0 0 18px rgba(63, 175, 120, 0.45);*/
 }
 
 .TextScale:hover {
-  color: rgba(63, 175, 120, 0.95);;
+  /* color: rgba(63, 175, 120, 0.95); */
 }
 
 .sidebarScale {
-  background-color: #1B2A24;;
+  /* background-color: #1B2A24;; */
+  border-style: solid;
+  border-width: 1px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   will-change: transform;

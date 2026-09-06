@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { motion as Motion } from 'motion/react'
 import './SideScroll.css'
 
 const links = [
@@ -18,13 +18,13 @@ function SideScroll({ activeSection }) {
         links.findIndex((link) => link.id === activeSection)
     )
     return (
-        <motion.nav
+        <Motion.nav
             className="container-fluid min-vh-100 sticky-top sidebarScale psp-stage"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
         >
-            <motion.ul
+            <Motion.ul
                 className="psp-nav"
                 animate={{ y: (CENTER_INDEX - activeIndex) * ITEM_STEP }}
                 transition={{ type: 'spring', stiffness: 220, damping: 28 }}
@@ -34,7 +34,7 @@ function SideScroll({ activeSection }) {
                     const isActive = index === activeIndex
 
                     return (
-                        <motion.li
+                        <Motion.li
                             key={link.id}
                             className="psp-item"
                             layout
@@ -51,11 +51,11 @@ function SideScroll({ activeSection }) {
                             >
                                 {link.label}
                             </a>
-                        </motion.li>
+                        </Motion.li>
                     )
                 })}
-            </motion.ul>
-        </motion.nav>
+            </Motion.ul>
+        </Motion.nav>
     )
 }
 

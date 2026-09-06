@@ -1,5 +1,5 @@
-import { motion, useAnimation, useInView } from 'motion/react';
-import { useRef, useEffect } from 'react';
+import { motion as Motion, useInView } from 'motion/react';
+import { useRef } from 'react';
 import game from './assets/images/game.png';
 
 function Projects() {
@@ -10,15 +10,15 @@ function Projects() {
 
     return (
         <div className="container-fluid p-5 min-vh-100 align-content-center" id="Projects">
-            <motion.div
+            <Motion.div
                 className="div"
                 ref={titleRef}
                 initial={{ opacity: 0, y: -50 }}
                 animate={titleInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}>
                 <h1 className="d-flex justify-content-center pb-5">Projects</h1>
-            </motion.div>
-            <motion.div className="row g-4"
+            </Motion.div>
+            <Motion.div className="row g-4"
                 ref={cardRef}
                 initial="hidden"
                 animate={cardInView ? "visible" : "hidden"}
@@ -29,7 +29,7 @@ function Projects() {
                         }
                     }
                 }}>
-                <motion.div className="col-12 col-md-6 col-lg-4"
+                <Motion.div className="col-12 col-md-6 col-lg-4"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { opacity: 1, transition: { duration: 0.3 } }
@@ -46,9 +46,9 @@ function Projects() {
                             </p>
                         </div>
                     </div>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div className="col-12 col-md-6 col-lg-4"
+                <Motion.div className="col-12 col-md-6 col-lg-4"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { opacity: 1, transition: { duration: 0.3 } }
@@ -65,9 +65,9 @@ function Projects() {
                             </p>
                         </div>
                     </div>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div className="col-12 col-md-6 col-lg-4"
+                <Motion.div className="col-12 col-md-6 col-lg-4"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { opacity: 1, transition: { duration: 0.3 } }
@@ -84,9 +84,9 @@ function Projects() {
                             </p>
                         </div>
                     </div>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div className="col-12 col-md-6 col-lg-4"
+                <Motion.div className="col-12 col-md-6 col-lg-4"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { opacity: 1, transition: { duration: 0.3 } }
@@ -103,8 +103,8 @@ function Projects() {
                             </p>
                         </div>
                     </div>
-                </motion.div>
-            </motion.div>
+                </Motion.div>
+            </Motion.div>
         </div>
     )
 }

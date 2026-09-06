@@ -1,5 +1,5 @@
-import { motion, useAnimation, useInView } from 'motion/react';
-import { useRef, useEffect } from 'react';
+import { motion as Motion, useAnimation, useInView } from 'motion/react';
+import { useEffect } from 'react';
 import logo from './assets/images/userIcon.jpg';
 
 function AboutMe({ aboutRef }) {
@@ -21,7 +21,7 @@ function AboutMe({ aboutRef }) {
     }, [inView, controls]);
 
     return (
-        <motion.div
+        <Motion.div
             className="d-flex container-fluid p-5 min-vh-100 align-content-center justify-content-center"
             id="About"
             ref={aboutRef}
@@ -40,7 +40,7 @@ function AboutMe({ aboutRef }) {
                     </p>
                 </div>
             </div>
-        </motion.div>
+        </Motion.div>
     )
 }
 

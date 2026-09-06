@@ -1,17 +1,18 @@
-import { motion, useAnimation, useInView } from 'motion/react';
-import { useRef, useEffect } from 'react';
+import { motion as Motion, useInView } from 'motion/react';
+import { useRef } from 'react';
 
 import CssIcon from './assets/images/techIcons/css-icon.svg?react'
 import HtmlIcon from './assets/images/techIcons/html-icon.svg?react'
 import JsIcon from './assets/images/techIcons/javascript-programming-language-icon.svg?react'
 import CsharpIcon from './assets/images/techIcons/logo_C_sharp.svg?react'
-import JavaIcon from './assets/images/techIcons/java-programming-language-icon.svg?react'
+//import JavaIcon from './assets/images/techIcons/java-programming-language-icon.svg?react'
 import PhpIcon from './assets/images/techIcons/php-programming-language-icon.svg?react'
 
 import ReactIcon from './assets/images/techIcons/react-js-icon.svg?react'
 import LaravelIcon from './assets/images/techIcons/laravel-icon.svg?react'
 import BootStrapIcon from './assets/images/techIcons/bootstrap-5-logo-icon.svg?react'
 import DotNetIcon from './assets/images/techIcons/DotNet_logo.svg?react'
+import YiiIcon from './assets/images/techIcons/yii-logo.svg?react'
 
 import GodotIcon from './assets/images/techIcons/godot-game-engine-icon.svg?react'
 import MySqlIcon from './assets/images/techIcons/mysql-icon.svg?react'
@@ -26,14 +27,14 @@ function Techstack() {
 
     return (
         <div className="container-fluid p-5 min-vh-100 align-content-center" id="Techstack">
-            <motion.div
+            <Motion.div
                 ref={titleRef}
                 initial={{ opacity: 0, y: -50 }}
                 animate={titleInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}>
                 <h1 className="d-flex justify-content-center pb-5">Techstack</h1>
-            </motion.div>
-            <motion.div
+            </Motion.div>
+            <Motion.div
                 className="row justify-content-center g-4"
                 ref={cardRef}
                 initial="hidden"
@@ -45,10 +46,10 @@ function Techstack() {
                         }
                     }
                 }}>
-                <motion.div className="col-auto"
+                <Motion.div className="col-auto"
                     variants={{
                         hidden: { opacity: 0 },
-                        visible: { opacity: 1, transition: {duration: 0.8} }
+                        visible: { opacity: 1, transition: { duration: 0.8 } }
                     }}>
                     <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Languages</h5>
@@ -75,26 +76,32 @@ function Techstack() {
                                     <CsharpIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>C#</p>
                                 </div>
+                                {/*
                                 <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <JavaIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>Java</p>
                                 </div>
+                                */}
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div
+                <Motion.div
                     className="col-auto"
                     variants={{
                         hidden: { opacity: 0 },
-                        visible: { opacity: 1, transition: {duration: 0.8} }
+                        visible: { opacity: 1, transition: { duration: 0.8 } }
                     }}>
                     <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Frameworks</h5>
                         <div className="card-body">
                             {/* Put Icons Here */}
                             <div className="d-flex flex-wrap justify-content-center" style={{ gap: "10px" }}>
+                                <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
+                                    <YiiIcon width={50} height={50} />
+                                    <p className='m-0 mt-1'>Yii</p>
+                                </div>
                                 <div className="border d-flex flex-column justify-content-center align-items-center p-2 rounded tech-item-hover" style={{ minWidth: "100px", minHeight: "100px" }}>
                                     <ReactIcon width={50} height={50} />
                                     <p className='m-0 mt-1'>React</p>
@@ -114,12 +121,12 @@ function Techstack() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div className="col-auto"
+                <Motion.div className="col-auto"
                     variants={{
                         hidden: { opacity: 0 },
-                        visible: { opacity: 1, transition: {duration: 0.8} }
+                        visible: { opacity: 1, transition: { duration: 0.8 } }
                     }}>
                     <div className="card card-hover">
                         <h5 className="card-title text-center mt-3">Others</h5>
@@ -145,8 +152,8 @@ function Techstack() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
-            </motion.div>
+                </Motion.div>
+            </Motion.div>
         </div>
     )
 }

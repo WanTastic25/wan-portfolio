@@ -15,5 +15,10 @@
 }
 
 .main-bg {
-    background-color: #0D1512;
+    background-color: none;
+}
+
+.image-box {
+    max-height: 260px;
+    overflow: hidden;
 }
