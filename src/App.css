@@ -22,3 +22,20 @@
     max-height: 260px;
     overflow: hidden;
 }
+
+.project-card {
+    min-height: 320px;
+}
+
+.project-card-visual {
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f6f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-card-description {
+    min-height: 72px;
+}
